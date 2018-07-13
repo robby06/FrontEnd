@@ -39,5 +39,52 @@ function titleFromThumb(thumbnail) {
 //setDetails, passing in the values from calling imageFromThumb and titleFromThumb.
     function setDetailsFromThumb(thumbnail) {
         'use strict';
+        //example of arguments with function calls
         setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
         }
+
+//Adding event listener
+//side note: addEventListener accepts two arguments: a string with the name of the event and a function.
+function addThumbClickHandler(thumb) {
+'use strict';
+thumb.addEventListener('click', function (event) {
+event.preventDefault();
+setDetailsFromThumb(thumb);
+});
+}
+
+//Accessing all the thumbnails
+function getThumbnailsArray() {
+    'use strict';
+    var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
+    var thumbnailArray = [].slice.call(thumbnails);
+    return thumbnailArray;
+    }
+
+//Iterating through the array of thumbnails
+function initializeEvents() {
+    'use strict';
+    var thumbnails = getThumbnailsArray();
+    thumbnails.forEach(addThumbClickHandler);
+    }
+    initializeEvents();
+    /* Strict mode explanation
+    It was created as a cleaner mode of JavaScript, catching
+certain kinds of coding mistakes (like typos in variable names), steering developers away from some
+error-prone parts of the language, and disabling some language features that are just plain bad.
+    */
+//Benefits of strict mode:
+/*
+• enforces the use of the var keyword
+• does not require with statements
+• places restrictions on the way the eval function can be used
+• treats duplicate names in a function’s parameters as a syntax error
+
+-using at the top of the function, is ignored by older browsers
+*/
+
+//Closures:
+/*
+    When a function is defined inside of another function, it can
+use any of the variables and parameters of this outer function
+*/
