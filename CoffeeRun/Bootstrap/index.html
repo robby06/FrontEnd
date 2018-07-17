@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>coffeerun</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootst
+rap/3.3.6/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <header>
+    <h1>CoffeeRun</h1>
+    </header>
+
+    <section>
+        <div class="panel panel-default">
+        <div class="panel-body">
+                        <form data-coffee-order="form">
+                        <!-- Input elements will go here -->
+                        <div class="form-group">
+               <!-- Linking a label and a form element-->             
+                        <label for="coffeeOrder">Coffee Order</label>
+                        <input class="form-control" name="coffee" id="coffeeOrder" autofocus>
+                        <!-- user to be able to enter text in it as soon as the
+page loads, instead of having to click.-->
+                    </div>
+                    <!--adding email input-->
+                    <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input class="form-control" type="email" name="emailAddress"
+                            id="emailInput" value="" placeholder="dr@who.com">
+                            <!-- Showing example input with placeholder text-->
+                            </div>
+                            <!-- Choices with radio buttons-->
+                            <div class="radio">
+                                    <label>
+                                    <input type="radio" name="size" value="short">
+                                    Short
+                                    </label>
+                                    </div>
+                                    <div class="radio">
+                                    <label>
+                                    <input type="radio" name="size" value="tall" checked>
+                                    Tall
+                                    </label>
+                                    </div>
+                                    <div class="radio">
+                                    <label>
+                                    <input type="radio" name="size" value="grande">
+                                    Grande
+                                    </label>
+                                    </div>
+
+                                    <!--adding dropdown menu-->
+                                    <div class="form-group">
+                                            <label for="flavorShot">Flavor Shot</label>
+                                            <select id="flavorShot" class="form-control" name="flavor">
+                                            <option value="">None</option>
+                                            <option value="caramel">Caramel</option>
+                                            <option value="almond">Almond</option>
+                                            <option value="mocha">Mocha</option>
+                                            </select>
+                                            </div>
+            <!--Adding range selector-->
+            <div class="form-group">
+                    <label for="strengthLevel">Caffeine Rating</label>
+                    <input name="strength" id="strengthLevel" type="range" value="30">
+                    </div>
+                    <!-- adding submit and reset button-->
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="reset" class="btn btn-default">Reset</button>
+                        </form>
+                        </div>
+                        </div>
+        </section>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+<script src="scripts/truck.js" charset="utf-8"></script>>
+<script src="scripts/main.js" charset="utf-8"></script>
+</body>
+</html>
