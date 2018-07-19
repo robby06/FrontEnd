@@ -3,3 +3,7 @@ Notes
 occur. The response property contains the data (such as HTML, XML, JSON, or another format)
 sent back by the server. The status is a numeric code that tells you whether the HTTP response was
 successful or not. These are officially known as HTTP Status Codes.
+
+Summary
+using IIFEs, callbacks, and Promises.  Some jQuery, which was used to manipulate
+DOM elements and communicate with a RESTful web service.
