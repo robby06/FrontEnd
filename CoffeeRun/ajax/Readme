@@ -1,0 +1,5 @@
+Notes
+-Two useful properties are response and status, which are updated as soon as any changes
+occur. The response property contains the data (such as HTML, XML, JSON, or another format)
+sent back by the server. The status is a numeric code that tells you whether the HTTP response was
+successful or not. These are officially known as HTTP Status Codes.
