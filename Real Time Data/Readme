@@ -1,1 +1,5 @@
 Starting topics such as Node JS and web sockets. Writing full stack application
+
+-Chattrbox (project):
+the JavaScript app in the browser will begin handling real-time communication over
+WebSockets.
