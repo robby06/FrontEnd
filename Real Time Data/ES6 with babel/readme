@@ -1,2 +1,5 @@
 Babel is a compiler. Its job is to translate ES6 syntax into the equivalent ES5 code to be run by a
 browser’s JavaScript engine
+
+-Babel converts ES6 module syntax into the equivalent Node.js-style require and
+module.exports syntax. Browserify then converts Node.js module code into ES5-friendly functions.
