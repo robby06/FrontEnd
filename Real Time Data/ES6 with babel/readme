@@ -1,0 +1,2 @@
+Babel is a compiler. Its job is to translate ES6 syntax into the equivalent ES5 code to be run by a
+browser’s JavaScript engine
